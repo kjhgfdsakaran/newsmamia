@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero">
+  <h1>Search</h1>
+  <p>"{{ query }}"</p>
+</div>
+
+<div class="wrap">
+  <div id="news-grid" class="grid">
+    <div class="loader">Searching...</div>
+  </div>
+  <div id="pagination-container" class="pages"></div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  loadNews('search', "{{ query }}");
+});
+</script>
+{% endblock %}

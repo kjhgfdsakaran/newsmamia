@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero">
+  <h1>NewsMania</h1>
+  <p>Your personalized news hub</p>
+</div>
+
+<div class="wrap">
+
+  <div class="pills">
+    <button class="pill on" onclick="filterByCategory('All')">All</button>
+    <button class="pill" onclick="filterByCategory('Technology')">Technology</button>
+    <button class="pill" onclick="filterByCategory('Sports')">Sports</button>
+    <button class="pill" onclick="filterByCategory('Politics')">Politics</button>
+    <button class="pill" onclick="filterByCategory('Entertainment')">Entertainment</button>
+    <button class="pill" onclick="filterByCategory('AI')">AI</button>
+  </div>
+
+  <div id="news-grid" class="grid">
+    <div class="loader">Loading news...</div>
+  </div>
+
+  <div id="pagination-container" class="pages"></div>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", () => loadNews('All'));
+</script>
+{% endblock %}
