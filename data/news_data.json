@@ -1,0 +1,74 @@
+{
+  "articles": [
+    {
+      "title": "iPhone 16 Pro: Apple's Most Powerful Device Yet",
+      "summary": "New A18 Pro chip delivers high performance with AI-enhanced photography.",
+      "category": "Technology",
+      "source": "Apple Insider",
+      "date": "2024-01-15"
+    },
+    {
+      "title": "Quantum Computing Breakthrough Reaches 1000 Qubits",
+      "summary": "Researchers achieve stable quantum systems for faster computation.",
+      "category": "Technology",
+      "source": "Wired",
+      "date": "2024-02-12"
+    },
+    {
+      "title": "Champions League Final Ends in Penalty Shootout",
+      "summary": "Underdog team wins after a dramatic penalty finish.",
+      "category": "Sports",
+      "source": "ESPN",
+      "date": "2024-04-10"
+    },
+    {
+      "title": "Olympians Break 3 World Records",
+      "summary": "Historic achievements in swimming, track, and gymnastics.",
+      "category": "Sports",
+      "source": "BBC Sport",
+      "date": "2024-05-18"
+    },
+    {
+      "title": "Climate Summit Sets New Emission Targets",
+      "summary": "Countries agree on faster carbon reduction plans.",
+      "category": "Politics",
+      "source": "Reuters",
+      "date": "2024-07-05"
+    },
+    {
+      "title": "Infrastructure Bill Passed by Senate",
+      "summary": "Major investment in roads, bridges, and broadband.",
+      "category": "Politics",
+      "source": "AP News",
+      "date": "2024-08-11"
+    },
+    {
+      "title": "Sci-Fi Movie Breaks Box Office Records",
+      "summary": "Sequel dominates global opening weekend.",
+      "category": "Entertainment",
+      "source": "Variety",
+      "date": "2024-10-02"
+    },
+    {
+      "title": "New Album Released Without Announcement",
+      "summary": "Surprise release shocks fans worldwide.",
+      "category": "Entertainment",
+      "source": "Rolling Stone",
+      "date": "2024-10-18"
+    },
+    {
+      "title": "AI Model Achieves Medical Diagnosis Accuracy",
+      "summary": "AI matches experts in diagnosing rare diseases.",
+      "category": "AI",
+      "source": "TechCrunch",
+      "date": "2024-11-20"
+    },
+    {
+      "title": "AI Factory Operates Without Human Workers",
+      "summary": "Fully automated production begins in Tokyo.",
+      "category": "AI",
+      "source": "CNET",
+      "date": "2024-12-01"
+    }
+  ]
+}

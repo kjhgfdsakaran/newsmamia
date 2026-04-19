@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero">
+  <h1>{{ category }}</h1>
+  <p>Latest updates</p>
+</div>
+
+<div class="wrap">
+  <div id="news-grid" class="grid">
+    <div class="loader">Loading...</div>
+  </div>
+  <div id="pagination-container" class="pages"></div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  loadNews("{{ category }}");
+});
+</script>
+{% endblock %}

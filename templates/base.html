@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsMania</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="nav-inner">
+
+    <!-- LOGO -->
+    <a href="/" class="logo">📰 NewsMania</a>
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-r">
+
+      <!-- SEARCH -->
+      <div class="search-box">
+        <input type="text" id="global-search" class="search"
+          placeholder="🔍 Search news..."
+          onkeydown="event.key==='Enter' && globalSearch()">
+      </div>
+
+      <!-- LIVE -->
+      <div class="pill-badge live">🔴 LIVE</div>
+
+      <!-- USER SECTION -->
+      {% if session.get('user') %}
+        <div class="pill-badge user">👤 {{ session.get('user') }}</div>
+
+        <a href="/bookmarks" class="pill-btn">🔖 Bookmarks</a>
+        <a href="/logout" class="pill-btn">Logout</a>
+      {% else %}
+        <a href="/login" class="pill-btn primary">Login</a>
+      {% endif %}
+
+      <!-- DARK MODE -->
+      <button class="pill-btn icon" onclick="toggleDarkMode()">🌙</button>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+<!-- ===== TOAST ===== -->
+<div id="toasts" class="toast-box"></div>
+
+<!-- ===== JS ===== -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% block scripts %}{% endblock %}
+
+</body>
+</html>
